@@ -30,10 +30,10 @@ class MyAppBloc extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     context.read<UserBloc>().add(
-                          LoadUser(userId: '123', userName: 'Julia'),
-                        );
+                      LoadUser(userId: '123', userName: 'Julia'),
+                    );
                   },
-                  child: Text('Login'),
+                  child: Text('Login', style: TextStyle(fontSize: 25)),
                 ),
               );
             }
@@ -60,10 +60,13 @@ class MyAppBloc extends StatelessWidget {
                     ElevatedButton(
                       onPressed: () {
                         context.read<UserBloc>().add(
-                              LoadUser(userId: '456', userName: 'Ana'),
-                            );
+                          LoadUser(userId: '456', userName: 'Julia Nascimento'),
+                        );
                       },
-                      child: Text('Mudar Valor'),
+                      child: Text(
+                        'Mudar Valor',
+                        style: TextStyle(fontSize: 25),
+                      ),
                     ),
                   ],
                 ),
